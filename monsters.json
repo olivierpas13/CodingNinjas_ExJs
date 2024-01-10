@@ -2,7 +2,7 @@
   {
     "name": "Dragon",
     "race": "fireBreather",
-    "healthPoints": 8,
+    "healthPoints": 7,
     "damage": 4,
     "level": 6
   },

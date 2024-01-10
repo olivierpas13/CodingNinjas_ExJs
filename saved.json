@@ -1,0 +1,98 @@
+{
+  "monsters": [
+    {
+      "name": "Dragon",
+      "race": "fireBreather",
+      "healthPoints": 7,
+      "damage": 4,
+      "level": 6
+    },
+    {
+      "name": "Goblin Shaman",
+      "race": "goblin",
+      "healthPoints": 3,
+      "damage": 2,
+      "level": 2
+    },
+    {
+      "name": "Specter",
+      "race": "undead",
+      "healthPoints": 6,
+      "damage": 3,
+      "level": 5
+    },
+    {
+      "name": "Stone Golem",
+      "race": "construct",
+      "healthPoints": 10,
+      "damage": 5,
+      "level": 7
+    },
+    {
+      "name": "Shadow Panther",
+      "race": "shadowCreature",
+      "healthPoints": 4,
+      "damage": 3,
+      "level": 4
+    }
+  ],
+  "hero": {
+    "name": "vier",
+    "race": "orc",
+    "healthPoints": 1,
+    "damage": 1,
+    "lvl": 1
+  },
+  "weapons": [
+    {
+      "name": "Sword",
+      "price": 50,
+      "slotsRequired": 2,
+      "type": "Melee",
+      "dmg": 10
+    },
+    {
+      "name": "Bow",
+      "price": 45,
+      "slotsRequired": 3,
+      "type": "Ranged",
+      "dmg": 8
+    },
+    {
+      "name": "Staff",
+      "price": 60,
+      "slotsRequired": 1,
+      "type": "Magic",
+      "dmg": 12
+    }
+  ],
+  "potions": [
+    {
+      "name": "Health Potion",
+      "price": 20,
+      "slotsRequired": 1,
+      "type": "Healing",
+      "duration": "Instant",
+      "level": 1,
+      "rarity": "Common"
+    },
+    {
+      "name": "Mana Elixir",
+      "price": 30,
+      "slotsRequired": 1,
+      "type": "Mana",
+      "duration": "Short",
+      "level": 2,
+      "rarity": "Uncommon"
+    },
+    {
+      "name": "Strength Brew",
+      "price": 40,
+      "slotsRequired": 1,
+      "type": "Buff",
+      "duration": "Medium",
+      "level": 3,
+      "rarity": "Rare"
+    }
+  ]
+}

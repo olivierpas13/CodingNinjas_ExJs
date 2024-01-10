@@ -1,45 +1,54 @@
-class Hero{
+class Hero {
     #name;
     #race;
     #healthPoints;
     #damage;
     #lvl;
-
-    constructor(name, race){
-        this.#name = name;
-        this.#race = race;
-        this.#healthPoints = 5;
-        this.#damage = 1;
-        this.#lvl = 1;
+  
+    constructor(name, race) {
+      this.#name = name;
+      this.#race = race;
+      this.#healthPoints = 5;
+      this.#damage = 1;
+      this.#lvl = 1;
     }
-
-
-    getName(){
-        return this.#name;
+  
+    toJSON() {
+      return {
+        name: this.#name,
+        race: this.#race,
+        healthPoints: this.#healthPoints,
+        damage: this.#damage,
+        lvl: this.#lvl,
+      };
     }
-
-    getHP(){
-        return this.#healthPoints;
+  
+    getName() {
+      return this.#name;
     }
-
-    getDamage(){
-        return this.#damage;
+  
+    getHP() {
+      return this.#healthPoints;
     }
-
+  
+    getDamage() {
+      return this.#damage;
+    }
+  
     upgradeLvl() {
-        return this.#lvl++;
+      return this.#lvl++;
     }
-
+  
     attack(monster) {
-        monster.setHP(monster.getHP()- this.#damage);
-        this.#healthPoints -= monster.getDamage();
+      monster.setHP(monster.getHP() - this.#damage);
+      this.#healthPoints -= monster.getDamage();
+      console.log(
+        "\nYou attacked the monster\n Now the monster has " +
+          monster.getHP() +
+          " health points"
+      );
     }
-
-
-
-
-
-
-}
-
-export default Hero;
+  }
+  
+  export default Hero;
+  
